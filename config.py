@@ -11,7 +11,7 @@ OBSERVATORY_URL: str = os.environ.get(
 
 # Model selection — haiku for routine tasks, sonnet for strategic/research
 DEFAULT_MODEL = "claude-haiku-4-5-20251001"
-RESEARCH_MODEL = "claude-sonnet-4-5-20251015"
+RESEARCH_MODEL = "claude-haiku-4-5-20251001"
 
 # Evidence quality gate
 MIN_CONFIDENCE: float = 0.70
