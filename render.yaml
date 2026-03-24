@@ -1,0 +1,14 @@
+services:
+  - type: worker
+    name: gti-mining-cloud
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ISSUER_SCOPED_TOKEN
+        sync: false
+      - key: OBSERVATORY_URL
+        value: https://evolentity-production-c979.up.railway.app
